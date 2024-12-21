@@ -1,12 +1,85 @@
 body {
   background: #22475d;
+  .roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 .forecast {
   max-width: 600px;
   background-color: #16394c;
-  margin: 60px auto;
-  padding: 30px;
+  margin: 45px auto;
+  padding: 20px;
   box-shadow: 10px 15px 30px #3a6278;
   border: 3px solid #608094;
+  border-radius: 16px;
+}
+.logo {
+}
+.city-search {
+  margin: 5px;
+  padding: 3px 5px;
+  width: 82%;
   border-radius: 10px;
+  border: 2px solid #608094;
+  background-color: aliceblue;
+  font-size: 15px;
+}
+.city-submit {
+  margin: 5px;
+  padding: 3px 7px;
+  border-radius: 10px;
+  border: 2px solid #608094;
+  background-color: aliceblue;
+  font-size: 15px;
+  color: #16394c;
+  font-weight: 600;
+}
+.city {
+  font-size: 25px;
+  color: azure;
+  margin: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.weather-container {
+  display: flex;
+  margin: 20px;
+}
+.image {
+  font-size: 75px;
+}
+.temp {
+  font-size: 75px;
+  color: azure;
+  font-weight: 500;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.degree {
+  font-size: 30px;
+  color: azure;
+  margin-top: 15px;
+}
+.wind {
+  font-size: 15px;
+  color: azure;
+  margin-left: 100px;
+  margin-top: 35px;
+}
+footer {
+  font-size: 15px;
+  color: azure;
+  margin: 15px 15px 7px 15px;
+  padding: 5px;
+  text-align: center;
+}
+a {
+  color: #69b6e0;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }

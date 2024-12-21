@@ -5,36 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Forecast</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="forecast">
       <div class="search">
+        <img
+          src="media/logo.svg"
+          alt="Forecast"
+          class="logo"
+          width="120"
+          height="40"
+        />
         <form action="">
-          <input type="search" placeholder="Enter a city" />
-          <input type="submit" text="Search" />
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            class="city-search"
+          />
+          <input type="submit" value="Search" class="city-submit" />
         </form>
       </div>
       <div class="city">New York City</div>
-      <div>
-        <span
-          ><img
-            src="media/1.svg"
-            alt="Weather Forecast"
-            width="100"
-            height="100"
-        /></span>
-        <div class="temp">21&deg C</div>
+      <div class="weather-container">
+        <div class="image">🌥️</div>
+        <div class="temp">21</div>
+        <div class="degree">&deg C</div>
         <div class="wind">
           <p>Windspeed= 7.2 km/h<br />Humidity= 87%</p>
         </div>
-        <footer>
-          This project was coded by
-          <a href="https://www.shecodes.io/graduates/140223-akshita-m">
-            Akshita</a
-          >
-          is open sourced on <a href="">Github</a> and hosted on Netlify
-        </footer>
       </div>
+      <footer>
+        This project was coded by
+        <a href="https://www.shecodes.io/graduates/140223-akshita-m">
+          Akshita</a
+        >
+        is open sourced on <a href="">Github</a> and hosted on
+        <a href="https://app.netlify.com/sites/forecastupdates/overview"
+          >Netlify</a
+        >.
+      </footer>
     </div>
   </body>
 </html>
