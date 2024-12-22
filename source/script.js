@@ -4,6 +4,12 @@ function updateWeather(response) {
   tempElement.innerHTML = Math.round(temperature);
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.city;
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.condition.description;
+  let speedElement = document.querySelector("#speed");
+  speedElement.innerHTML = `${response.data.wind.speed} km/h`;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
 }
 
 function addApi(city) {
@@ -23,3 +29,4 @@ function addCityName(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement = addEventListener("submit", addCityName);
+addApi("New York");

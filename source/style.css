@@ -44,18 +44,23 @@ body {
   text-align: center;
   font-weight: 700;
 }
-.city::first-letter {
+
+.description::first-letter {
   text-transform: capitalize;
 }
 
 .weather-container {
   display: flex;
   justify-content: space-between;
-  margin: 7px;
+  margin: 10px;
 }
 .image {
-  font-size: 75px;
-  position: sticky;
+  font-size: 65px;
+}
+.description {
+  font-size: 16px;
+  color: azure;
+  text-align: center;
 }
 .temp {
   font-size: 75px;
@@ -74,6 +79,7 @@ body {
   font-size: 15px;
   color: azure;
   margin-top: 35px;
+  padding: 3px;
 }
 footer {
   font-size: 15px;
