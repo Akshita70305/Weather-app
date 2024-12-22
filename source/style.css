@@ -52,33 +52,33 @@ body {
 .weather-container {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
+  margin: 25px 20px;
 }
 .image {
-  font-size: 65px;
+  width: 120px;
+  height: 120px;
 }
 .description {
   font-size: 16px;
   color: azure;
-  text-align: center;
 }
 .temp {
-  font-size: 75px;
+  font-size: 70px;
   color: azure;
   font-weight: 500;
-  margin-left: 120px;
+  margin-left: 90px;
   margin-top: 20px;
 }
 .degree {
   font-size: 30px;
   color: azure;
   margin-top: 15px;
-  margin-right: 120px;
+  margin-right: 80px;
 }
 .wind {
   font-size: 15px;
   color: azure;
-  margin-top: 35px;
+  margin-top: 15px;
   padding: 3px;
 }
 footer {

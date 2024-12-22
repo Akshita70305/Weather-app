@@ -10,6 +10,8 @@ function updateWeather(response) {
   speedElement.innerHTML = `${response.data.wind.speed} km/h`;
   let humidityElement = document.querySelector("#humidity");
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="image" />`;
 }
 
 function addApi(city) {
