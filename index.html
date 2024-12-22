@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Forecast</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="source/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Weather Forecast</title>
   </head>
   <body>
     <div class="forecast">
@@ -22,22 +23,23 @@
           width="120"
           height="40"
         />
-        <form action="">
+        <form action="" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             class="city-search"
+            id="city-search"
           />
           <input type="submit" value="Search" class="city-submit" />
         </form>
       </div>
-      <div class="city">New York City</div>
+      <div class="city" id="city">New York City</div>
       <div class="weather-container">
         <div class="image">🌥️</div>
         <div class="temp">21</div>
         <div class="degree">&deg C</div>
         <div class="wind">
-          <p>Windspeed= 7.2 km/h<br />Humidity= 87%</p>
+          <p>Windspeed: 7.2 km/h<br />Humidity: 87%</p>
         </div>
       </div>
       <footer>
@@ -51,5 +53,6 @@
         >.
       </footer>
     </div>
+    <script src="source/script.js"></script>
   </body>
 </html>
