@@ -50,27 +50,29 @@ body {
 
 .weather-container {
   display: flex;
-  margin: 20px;
+  justify-content: space-between;
+  margin: 7px;
 }
 .image {
   font-size: 75px;
+  position: sticky;
 }
 .temp {
   font-size: 75px;
   color: azure;
   font-weight: 500;
-  margin-left: 110px;
+  margin-left: 120px;
   margin-top: 20px;
 }
 .degree {
   font-size: 30px;
   color: azure;
   margin-top: 15px;
+  margin-right: 120px;
 }
 .wind {
   font-size: 15px;
   color: azure;
-  margin-left: 100px;
   margin-top: 35px;
 }
 footer {
