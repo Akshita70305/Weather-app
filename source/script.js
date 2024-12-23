@@ -29,6 +29,25 @@ function addCityName(event) {
   addApi(citySearch.value);
 }
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml += `<div class="weather-forecast-day">
+          <div class="weather-forecast-date">${day}</div>
+          <div class="weather-forecast-icon">🌥️</div>
+          <div class="weather-forecast-temp">
+            <div class="weather-forecast-tem">15&deg</div>
+            <div class="weather-forecast-tem">9&deg</div>
+          </div>
+        </div>`;
+  });
+
+  let weatherForecast = document.querySelector("#weather-forecast");
+  weatherForecast.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement = addEventListener("submit", addCityName);
 addApi("New York");
+displayForecast();
