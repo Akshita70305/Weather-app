@@ -30,7 +30,7 @@ function addCityName(event) {
 
 function formatDate(timestamp) {
   let date = new Date(timestamp * 1000);
-  let day = ["Sun", "Mon", "Tue", "Wed", "Thu", "fri", "Sat"];
+  let day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   return day[date.getDay()];
 }
 function getForecast(city) {
